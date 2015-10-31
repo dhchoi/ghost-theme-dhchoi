@@ -1,0 +1,27 @@
+{{! This is the post loop - each post will be output using this markup }}
+<div class="post-grid">
+  <div class="grid-sizer"></div>
+  {{#foreach posts}}
+      <div class="post-grid-u">
+          <article class="post-square effect-fader">
+            {{#if image}}<img src="{{image}}" alt=""/>{{/if}}
+              <header>
+                  <h2><a href="{{url}}">{{{title}}}</a></h2>
+              </header>
+              <div class="post-square-content">
+                  <section>
+                      <p>{{excerpt words="26"}} ...</p>
+                  </section>
+                  <footer>
+                    {{tags}}
+                    {{#if tags}}<br>{{/if}}
+                      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                  </footer>
+              </div>
+          </article>
+      </div>
+  {{/foreach}}
+</div>
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
