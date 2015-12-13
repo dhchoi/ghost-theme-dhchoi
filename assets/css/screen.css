@@ -1245,6 +1245,11 @@ body:not(.post-template) .post-title {
   display: none;
 }
 
+.post-content {
+  border-bottom: #EBF2F6 1px solid;
+  padding-bottom: 4rem;
+}
+
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
 .post-content img {
@@ -1284,9 +1289,9 @@ body:not(.post-template) .post-title {
 /* The author credit area after the post */
 .post-footer {
   position: relative;
-  margin: 6rem 0 0 0;
+  margin: 2rem 0 0 0;
   padding: 6rem 0 0 0;
-  border-top: #EBF2F6 1px solid;
+  text-align: right;
 }
 
 .post-footer h4 {
@@ -1648,9 +1653,28 @@ body:not(.post-template) .post-title {
   margin-bottom: 1.75em;
 }
 
-/* Disqus */
-.comments {
-  margin-top: 3em;
+/* Comments */
+.post-comments {
+  margin: 3rem 0 0 0;
+  padding: 3rem 0 0 0;
+}
+
+.comments-toggle {
+  box-sizing: border-box;
+  border: 1px solid #BFC8CD;
+  border-radius: 3px;
+  color: #9EABB3;
+  display: block;
+  padding: .65rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.comments-toggle:hover {
+  border-color: #555;
+  color: #555;
 }
 
 /* ==========================================================================
@@ -2092,6 +2116,10 @@ body:not(.post-template) .post-title {
     margin-top: 0;
   }
 
+  .post-content {
+    padding-bottom: 2rem;
+  }
+
   .post-content img {
     padding: 0;
     width: calc(100% + 32px); /* expand with to image + margins */
@@ -2102,6 +2130,15 @@ body:not(.post-template) .post-title {
   .post-meta {
     font-size: 1.3rem;
     margin-top: 1rem;
+  }
+
+  .post-comments {
+    margin: 2rem 0 0 0;
+    padding: 2rem 0 0 0;
+  }
+
+  .comments-toggle {
+    padding: .4rem;
   }
 
   .post-footer {

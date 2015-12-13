@@ -6,6 +6,9 @@
 (function ($, undefined) {
   "use strict";
 
+  /**
+   * Functions related to Index page and Comments
+   */
   $(window).load(function () {
     // Setup PostSquare Colors
     var colors = THEME_CONFIG.postSquareColors;
@@ -21,11 +24,24 @@
       columnWidth: '.grid-sizer',
       percentPosition: true
     });
+
+    // Comments
+    if(THEME_CONFIG.useComments) {
+      var $commentsBody = $(".comments-body");
+      if(THEME_CONFIG.autoHideComments) {
+        $commentsBody.hide();
+      }
+      $(".comments-toggle").click(function (event) {
+        event.preventDefault();
+        $commentsBody.toggle();
+      });
+    }
   });
 
-  var $document = $(document);
-
-  $document.ready(function () {
+  /**
+   * Functions related to Post pages
+   */
+  $(document).ready(function () {
     var $postContent = $(".post-content");
     $postContent.fitVids();
 
@@ -37,6 +53,11 @@
     });
 
     $("section.post-content a").attr("target","_blank");
+
+    // Comments
+    if(!THEME_CONFIG.useComments) {
+      $(".post-comments").hide();
+    }
   });
 
   // Arctic Scroll by Paul Adam Davis
