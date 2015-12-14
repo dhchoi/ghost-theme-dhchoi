@@ -1,8 +1,8 @@
-# Minsper - A Ghost Theme for Single Bloggers
+# Minsper - A Ghost Theme for Personal Blogs
 
 ![Ghost](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
 
-A minimized and better-designed version of Casper for a single blogger. A running demo of the theme can be found [here](http://www.dhchoi.com/).
+A minimized and better-designed version of Casper for personal blogs. A running demo of the theme can be found [here](http://www.dhchoi.com/).
 
 ## Features
 
