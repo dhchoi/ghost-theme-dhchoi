@@ -1655,6 +1655,7 @@ body:not(.post-template) .post-title {
 
 /* Comments */
 .post-comments {
+  display: none;
   margin: 3rem 0 0 0;
   padding: 3rem 0 0 0;
 }
@@ -1675,6 +1676,10 @@ body:not(.post-template) .post-title {
 .comments-toggle:hover {
   border-color: #555;
   color: #555;
+}
+
+.comments-body {
+  display: none;
 }
 
 /* ==========================================================================
