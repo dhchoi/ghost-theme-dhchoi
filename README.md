@@ -6,7 +6,7 @@ A minimized and better-designed version of Casper for personal blogs. A running 
 
 ## Features
 
-* Compatible with the newest version of Ghost (v0.7.1).
+* Compatible with the newest version of Ghost (v0.7.9).
 * Works for all display sizes.
 * No routes to needless individual author pages.
 * Better designed elements, such as navigation, tags, etc.
