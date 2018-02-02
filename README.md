@@ -21,7 +21,7 @@ Zip the repository and upload the theme at your own Ghost console page within th
 
 ## Hacking
 
-Run a [local version of Ghost](https://docs.ghost.org/docs/install-local#section-developing-themes) while changing the source code until you get the result you want.
+Run a [local version](https://docs.ghost.org/docs/install-local#section-developing-themes) of Ghost and setup the theme within it so that you can easily monitor changes made to the source code. Also, check with the [changelog](https://themes.ghost.org/v1.20.0/docs/changelog) to see if the code will be compatible with any future Ghost version.
 
 ## Configurations
 
