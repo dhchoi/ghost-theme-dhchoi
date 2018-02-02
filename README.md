@@ -1,12 +1,12 @@
 # Minsper - A Ghost Theme for Personal Blogs
 
-![Ghost](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+![Ghost](https://img.shields.io/badge/Ghost-1.20.0-brightgreen.svg?style=flat-square)
 
 A minimized and better-designed version of Casper for personal blogs. A running demo of the theme can be found [here](http://www.dhchoi.com/).
 
 ## Features
 
-* Compatible with the newest version of Ghost (v0.7.9).
+* Compatible with the newest version of Ghost (v1.20.0).
 * Works for all display sizes.
 * No routes to needless individual author pages.
 * Better designed elements, such as navigation, tags, etc.
@@ -17,7 +17,11 @@ A minimized and better-designed version of Casper for personal blogs. A running 
 
 ## Installation
 
-Clone the repository inside Ghost's themes directory (`~GHOST-DIRECTORY/content/themes/`) or download the repository and put the root folder inside it.
+Zip the repository and upload the theme at your own Ghost console page within the **Design** panel.
+
+## Hacking
+
+Run a [local version of Ghost](https://docs.ghost.org/docs/install-local#section-developing-themes) while changing the source code until you get the result you want.
 
 ## Configurations
 
