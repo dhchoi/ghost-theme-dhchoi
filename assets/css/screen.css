@@ -257,10 +257,6 @@ table {
   font-size: 1.1em;
 }
 
-.icon-google-plus:before {
-  content: "\f603";
-}
-
 .icon-facebook:before {
   content: "\f604";
 }
@@ -1122,13 +1118,20 @@ body:not(.page-template) .post-title {
 }
 
 .post-meta {
-  display: block;
   margin: 1.2rem 0 4rem 0;
+}
+
+.post-meta, .post-tags {
+  display: block;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.2rem;
   color: #9EABB3;
+}
+
+.post-tags {
+  text-align: left;
 }
 
 .author-thumb {
@@ -1139,7 +1142,7 @@ body:not(.page-template) .post-title {
   border-radius: 100%;
 }
 
-.post-meta a,
+.post-tags a,
 .post-square footer a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1157,7 +1160,7 @@ body:not(.page-template) .post-title {
   transition: 0.3s ease;
 }
 
-.post-meta a:hover {
+.post-tags a:hover {
   background-color: #555;
 }
 
@@ -1246,11 +1249,6 @@ body:not(.page-template) .post-title {
   display: none;
 }
 
-.post-content {
-  border-bottom: #EBF2F6 1px solid;
-  padding-bottom: 4rem;
-}
-
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
 .post-content img {
@@ -1287,23 +1285,6 @@ body:not(.page-template) .post-title {
   text-decoration: none;
 }
 
-/* The author credit area after the post */
-.post-footer {
-  position: relative;
-  padding: 6rem 0 0 0;
-  text-align: center;
-}
-
-.post-footer h4 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.post-footer p {
-  margin: 1rem 0;
-  font-size: 1.4rem;
-  line-height: 1.75em;
-}
 
 /* list of author links - location / url */
 .author-meta {
@@ -1324,49 +1305,21 @@ body:not(.page-template) .post-title {
   color: #111;
 }
 
-/* Create some space to the right for the share links */
-.post-footer .author {
-  margin-right: 180px;
-}
-
-.post-footer h4 a {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-
-.post-footer h4 a:hover {
-  text-decoration: underline;
-}
-
-/* Drop the share links in the space to the right.
-   Doing it like this means it's easier for the author bio
-   to be flexible at smaller screen sizes while the share
-   links remain at a fixed width the whole time */
-.post-footer .share {
-  /* position: absolute;
-  top: 4rem;
-  right: 0;
-  width: 140px; */
-}
-
-.post-footer .share a {
+.share a {
   font-size: 1.8rem;
   display: inline-block;
-  margin: 1rem 1.6rem 1.6rem 1rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
   color: #BBC7CC;
   text-decoration: none;
+  vertical-align: middle;
 }
 
-.post-footer .share .icon-twitter:hover {
+.share .icon-twitter:hover {
   color: #55acee;
 }
 
-.post-footer .share .icon-facebook:hover {
+.share .icon-facebook:hover {
   color: #3b5998;
-}
-
-.post-footer .share .icon-google-plus:hover {
-  color: #dd4b39;
 }
 
 /* ==========================================================================
@@ -1656,8 +1609,9 @@ body:not(.page-template) .post-title {
 /* Comments */
 .post-comments {
   display: none;
-  margin: 3rem 0 0 0;
-  padding: 3rem 0 0 0;
+  margin: 4rem auto 3rem auto;
+  max-width: 710px;
+  width: 75%;
 }
 
 .comments-toggle {
@@ -1666,6 +1620,7 @@ body:not(.page-template) .post-title {
   border-radius: 3px;
   color: #9EABB3;
   display: block;
+  font-size: .95em;
   padding: .65rem;
   text-decoration: none;
   text-align: center;
@@ -2043,12 +1998,7 @@ body:not(.page-template) .post-title {
     margin-bottom: 2rem;
     margin-left: 16px;
     margin-right: 16px;
-    padding-bottom: 0;
     line-height: 1.65em;
-  }
-
-  .post-date {
-    display: none;
   }
 
   .page-template .post-header {
@@ -2119,10 +2069,6 @@ body:not(.page-template) .post-title {
     margin-top: 0;
   }
 
-  .post-content {
-    padding-bottom: 2rem;
-  }
-
   .post-content img {
     padding: 0;
     width: calc(100% + 32px); /* expand with to image + margins */
@@ -2135,33 +2081,9 @@ body:not(.page-template) .post-title {
     margin-top: 1rem;
   }
 
-  .post-comments {
-    margin: 2rem 0 0 0;
-    padding: 2rem 0 0 0;
-  }
 
   .comments-toggle {
     padding: .4rem;
-  }
-
-  .post-footer {
-    padding: 3rem 0 3rem 0;
-    text-align: center;
-  }
-
-  .post-footer .author {
-    margin: 0 0 2rem 0;
-    padding: 0 0 1.6rem 0;
-    border-bottom: #EBF2F6 1px dashed;
-  }
-
-  .post-footer .share {
-    position: static;
-    width: auto;
-  }
-
-  .post-footer .share a {
-    margin: 1.4rem 0.8rem 0 0.8rem;
   }
 
   .author-meta li {
