@@ -4,6 +4,10 @@
 
 A minimized and updated version of Casper for personal blogs. A running demo of the theme can be found [here](http://www.dhchoi.com/).
 
+<p align="center">
+  <img src="https://github.com/dhchoi/minsper/blob/master/images/screenshot-devices.png?raw=true" alt="Screenshot Mockups"/>
+</p>
+
 ## Features
 
 * Compatible with the newest version of Ghost (v1.20.0).
