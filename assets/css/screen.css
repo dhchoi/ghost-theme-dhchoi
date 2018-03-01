@@ -1614,7 +1614,7 @@ body:not(.page-template) .post-title {
   width: 75%;
 }
 
-.comments-toggle {
+.comments-btn {
   box-sizing: border-box;
   border: 1px solid #BFC8CD;
   border-radius: 3px;
@@ -1628,7 +1628,7 @@ body:not(.page-template) .post-title {
   width: 100%;
 }
 
-.comments-toggle:hover {
+.comments-btn:hover {
   border-color: #555;
   color: #555;
 }
@@ -2082,7 +2082,7 @@ body:not(.page-template) .post-title {
   }
 
 
-  .comments-toggle {
+  .comments-btn {
     padding: .4rem;
   }
 
