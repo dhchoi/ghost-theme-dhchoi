@@ -15,10 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-    {{! Styles'n'Scripts }}
+    {{! Styles }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/loop.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,700italic,300italic|Open+Sans:700,400" />
+
+    {{! Config: must be put before ghost_head }}
     <script type="text/javascript" src="{{asset "js/config.js"}}"></script>
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -40,7 +42,7 @@
 
     </div>
 
-    {{! JavaScript files for the theme }}
+    {{! Scripts }}
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
