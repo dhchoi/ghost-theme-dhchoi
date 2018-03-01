@@ -2,7 +2,8 @@
  * Main file for theme behaviors.
  */
 
-(function ($) {
+ // THEME_CONFIG should've been defined through code injection within Ghost's administrator page
+(function ($, THEME_CONFIG) {
   "use strict";
 
   /**
@@ -10,7 +11,7 @@
    */
   $(window).load(function () {
     // Setup PostSquare colors
-    var colors = THEME_CONFIG.postSquareColors;
+    var colors = THEME_CONFIG.postSquareColors ? THEME_CONFIG.postSquareColors : ["#779ecb"];
     var $postSquares = $(".post-square");
     $.each($postSquares, function (index, value) {
       $(value).css("background", colors[Math.floor(Math.random() * colors.length)]);
@@ -52,12 +53,12 @@
       return dsq;
     }
 
-    if (THEME_CONFIG.useComments && THEME_CONFIG.disqusShortname) {
+    if (THEME_CONFIG.disqusShortname) {
       // display comment section if using comments
       $(".post-comments").show();
 
-      // if not auto hiding, load and show comments right away
-      if (!THEME_CONFIG.autoHideComments) {
+      // if auto loading, load and show comments right away
+      if (THEME_CONFIG.autoLoadComments) {
         dsq = loadDisqus();
         $commentsBody.show();
         $commentsBtn.text("Close Comments");
@@ -83,4 +84,4 @@
       });
     }
   });
-})(window.jQuery);
+})(window.jQuery, window.THEME_CONFIG);
