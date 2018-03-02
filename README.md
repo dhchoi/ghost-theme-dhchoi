@@ -54,3 +54,4 @@ Config for setting the loading time point of the comments within the comments se
 ## Future Plans
 
 * Adding a dedicated search page.
+* Using a pre-processor for stylesheets.
